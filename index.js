@@ -165,12 +165,18 @@ bot.on('message', message => {
             .setColor('#25c059')
             .addField("**Vous avez claqué **" + slap +".", "<https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif>")
             .setFooter("Merci d'utiliser le bot ! :wink:");
-            message.reply("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif");
+            message.channel.sendEmbed(help_embed)
+            message.channel.send("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif");
             console.log(randnum);   
         }
 
         if (randnum == 2){
-            message.reply("https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif");
+            var help_embed = new Discord.RichEmbed()
+            .setColor('#25c059')
+            .addField("**Vous avez claqué **" + slap +".", "<https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif>")
+            .setFooter("Merci d'utiliser le bot ! :wink:");
+            message.channel.sendEmbed(help_embed)
+            message.channel.send("https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif");
             console.log(randnum);
 
         }
