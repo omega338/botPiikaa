@@ -175,6 +175,33 @@ bot.on('message', message => {
 
         }
     }
+    
+    
+    
+    
+    if (message.content === "+slap"){
+        random();
+        var slap = args[0] 
+        if (randnum == 1){
+            var help_embed = new Discord.RichEmbed()
+            .setColor('#25c059')
+            .addField("**Vous avez claqué **" + slap +".", "<https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif>")
+            .setFooter("Merci d'utiliser le bot ! :wink:");
+            message.reply("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif");
+            console.log(randnum);   
+        }
+
+        if (randnum == 2){
+            message.reply("https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif");
+            console.log(randnum);
+
+        }
+    }
+    
+    
+    
+    
+    
 
     if (message.content === prefix + "maj"){
     var help_embed = new Discord.RichEmbed()
