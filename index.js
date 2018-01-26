@@ -340,3 +340,9 @@ function random(min, max) {
     max = Math.floor(7);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
+
+function random(min, max) {
+    min = Math.ceil(1);
+    max = Math.floor(2);
+    randnum = Math.floor(Math.random() * (max - min +1) + min);
+}
