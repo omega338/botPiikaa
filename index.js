@@ -286,7 +286,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "invite"){
-        message.reply("Voici le lien pour m'ajouter dans votre serveur : https://discordapp.com/oauth2/authorize?client_id=404279270995918849&permissions=0&scope=bot")   
+        message.reply("Voici le lien pour m'ajouter dans votre serveur : https://discordapp.com/oauth2/authorize?client_id=404279270995918849&permissions=8&scope=bot")   
          console.log('pong')
     }    
 
@@ -341,7 +341,7 @@ function random(min, max) {
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
 
-function random(min, max) {
+function random2(min, max) {
     min = Math.ceil(1);
     max = Math.floor(2);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
