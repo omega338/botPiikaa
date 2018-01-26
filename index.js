@@ -313,7 +313,7 @@ bot.on('message', message => {
     
         if (message.content === prefix + "owbey"){
             message.reply("EHHHHHHHH MERCE HEINN")}
-            console.log(ping);}
+            
             
 
 
