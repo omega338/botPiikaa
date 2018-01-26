@@ -310,6 +310,10 @@ bot.on('message', message => {
         if (randnum == 2){
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
             console.log(randnum);}
+    
+        if (message.content === prefix + "owbey"){
+            message.reply("EHHHHHHHH MERCE HEINN")}
+            
 
 
 
