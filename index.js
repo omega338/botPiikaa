@@ -299,7 +299,7 @@ bot.on('message', message => {
         message.reply("On appelle le bg ? :smirk:")}
 
     if (message.content === prefix + "aldjia"){
-       message.reply("Askip son anniversaire, c'est demain, je vais lui souhaiter le jour j !")}
+       message.reply("Joyeux anniversaire !")}
 
     if (message.content === prefix + "bang"){
         random();
