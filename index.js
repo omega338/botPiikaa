@@ -158,7 +158,7 @@ bot.on('message', message => {
     }
     
     if (message.content === prefix + "slap"){
-        random();
+        random2();
         var slap = args[0] 
         if (randnum == 1){
             var help_embed = new Discord.RichEmbed()
