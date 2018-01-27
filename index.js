@@ -252,8 +252,8 @@ bot.on('message', message => {
     if (message.content === prefix + "avatar"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#25c059')
-        .addField("message.author.avatarURL")
-        .setFooter("• Avatar de {$message.author.username}");
+        .addField("(message.author.avatarURL)")
+        .setFooter("• Voici votre Avatar ! ");
         message.channel.sendEmbed(help_embed);
         console.log('avatar demandé !')}
 
