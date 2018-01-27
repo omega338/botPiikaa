@@ -159,11 +159,11 @@ bot.on('message', message => {
     
     if (message.content === prefix + "slap"){
         random2();
-        var slap = args[0] 
+        var slap = args[1] 
         if (randnum2 == 1){
             var help_embed = new Discord.RichEmbed()
             .setColor('#25c059')
-            .addField("**Vous avez claqué **" + slap +".", "<https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif>")
+            .addField("**Vous avez claqué **" + slap +".", "Ouille ça fait mal !")
             .setFooter("Merci d'utiliser le bot ! :wink:");
             message.channel.sendEmbed(help_embed)
             message.channel.send("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif");
@@ -173,7 +173,7 @@ bot.on('message', message => {
         if (randnum2 == 2){
             var help_embed = new Discord.RichEmbed()
             .setColor('#25c059')
-            .addField("**Vous avez claqué **" + slap +".", "<https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif>")
+            .addField("**Vous avez claqué **" + slap +".", "Méchant !!!")
             .setFooter("Merci d'utiliser le bot ! :wink:");
             message.channel.sendEmbed(help_embed)
             message.channel.send("https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif");
