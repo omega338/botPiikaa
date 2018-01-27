@@ -248,6 +248,8 @@ bot.on('message', message => {
         message.reply("Bon anniversaire @Kasaiye#9381 ! Je te souhaite tout plein de bonheur ! :wink:")
         console.log('pong')
     }
+     
+bot.on('message', message => {
     if (message.content === prefix +"avatar"){
         message.reply(message.author.avatarURL);
 	console.log('avatar demandé !')}
@@ -263,17 +265,19 @@ bot.on('message', message => {
 	
     if (message.content === prefix + "tavli"){
 	message.reply("Tavli c'est la plus Gro$$eBiatch")
-    }
+	    
+    if (message.content === prefix = "eliott"){
+	message.reply("elio le gigolo")
+
     if (message.content === prefix + "bang"){
         random();
         if (randnum == 1){
-        message.reply("https://media.giphy.com/media/cXjQ9tr9aUFm8/giphy.gif")
+        message.reply("https://media.giphy.com/media/cXjQ9tr9aUFm8/giphy.gif")}
         console.log(randnum);}
 
         if (randnum == 2){
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
-            console.log(randnum);}
-        }
+            console.log(randnum);
 	
 	if (message.content === "ntm"){
         message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
@@ -300,7 +304,7 @@ bot.on('message', message => {
 
     
       
-    })
+}})
 
 
 function random(min, max) {
