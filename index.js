@@ -274,6 +274,12 @@ bot.on('message', message => {
     
         if (message.content === prefix + "owbey"){
             message.reply("EHHHHHHHH MERCE HEINN")}
+	
+	if (message.content === "ntm"){
+        message.reply(":x:Évite d'envoyer des insultes sous peine de mute ou de ban !")
+        console.log('Tu es moche !')
+    }
+
             
             
 
