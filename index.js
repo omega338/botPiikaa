@@ -16,7 +16,7 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login('NDA1MDQxNzE3MTQyNzQ5MTg0.DUeoHQ.HMhyZHqxfI3Tv8LZR_EIOIGLN0U');
+bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g)
