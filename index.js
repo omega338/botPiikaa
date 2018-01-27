@@ -16,7 +16,7 @@ bot.on('ready', () => {
     console.log("Bot Ready !");
 });
 
-bot.login(process.env.TOKEN);
+bot.login('NDA1MDQxNzE3MTQyNzQ5MTg0.DUeoHQ.HMhyZHqxfI3Tv8LZR_EIOIGLN0U');
 
 bot.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g)
@@ -225,9 +225,9 @@ bot.on('message', message => {
     }
 
     if (message.content === "#grosvent"){
-        message.reply("Ouais c'est le cas de l'dire !");
+        message.reply("Ouais c'est le cas de l'dire !")
         console.log('Gros vent')
-}
+    }
 
     if (message.content === "t moche"){
         message.reply("Euh, tu t'es vu toi ?")
@@ -249,7 +249,7 @@ bot.on('message', message => {
         console.log('pong')
     }
      
-    bot.on('message', message => {
+bot.on('message', message => {
     if (message.content === prefix +"avatar"){
         message.reply(message.author.avatarURL);
 	console.log('avatar demandé !')}
@@ -301,7 +301,7 @@ bot.on('message', message => {
 
     
       
-});
+})})
 
 
 function random(min, max) {
@@ -313,4 +313,3 @@ function random(min, max) {
 function random2(min, max) {
     randnum2 = Math.round(Math.random() * 2 )
 }
-	
