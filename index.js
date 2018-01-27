@@ -287,7 +287,7 @@ bot.on('message', message => {
 	
 	
 	if (message.content === "T ki ?"){
-        message.reply("Je suis ta mère. (:")
+        message.reply("Je suis ta mère. :smirk:")
         console.log('Tu es moche !')
     }
 
