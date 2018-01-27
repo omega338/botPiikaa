@@ -274,7 +274,8 @@ bot.on('message', message => {
 
         if (randnum == 2){
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
-            console.log(randnum);
+            console.log(randnum);}
+        }
 	
 	if (message.content === "ntm"){
         message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
@@ -301,7 +302,7 @@ bot.on('message', message => {
 
     
       
-})})
+    })})
 
 
 function random(min, max) {
