@@ -276,7 +276,7 @@ bot.on('message', message => {
             message.reply("EHHHHHHHH MERCE HEINN")}
 	
 	if (message.content === "ntm"){
-        message.reply(":x:Évite d'envoyer des insultes sous peine de mute ou de ban !")
+        message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
         console.log('Tu es moche !')
     }
 
