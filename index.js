@@ -248,8 +248,6 @@ bot.on('message', message => {
         message.reply("Bon anniversaire @Kasaiye#9381 ! Je te souhaite tout plein de bonheur ! :wink:")
         console.log('pong')
     }
-     
-bot.on('message', message => {
     if (message.content === prefix +"avatar"){
         message.reply(message.author.avatarURL);
 	console.log('avatar demandé !')}
@@ -302,7 +300,7 @@ bot.on('message', message => {
 
     
       
-    })})
+    })
 
 
 function random(min, max) {
