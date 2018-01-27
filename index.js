@@ -225,7 +225,7 @@ bot.on('message', message => {
     }
 
     if (message.content === "#grosvent"){
-        message.reply("Ouais c'est le cas de la dire !");
+        message.reply("Ouais c'est le cas de l'dire !");
         console.log('Gros vent')
 }
 
