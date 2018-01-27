@@ -282,13 +282,13 @@ bot.on('message', message => {
     }
 	
 	if (message.content === "t ki ?"){
-        message.reply("Je pense que je suis ta mère. (:")
+        message.reply("Je suis ta mère. (:")
         console.log('Tu es moche !')
     }
 	
 	
 	if (message.content === "T ki ?"){
-        message.reply("Je pense que je suis ta mère. (:")
+        message.reply("Je suis ta mère. (:")
         console.log('Tu es moche !')
     }
 
