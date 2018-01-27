@@ -271,10 +271,7 @@ bot.on('message', message => {
 
         if (randnum == 2){
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
-            console.log(randnum);}
-    
-        if (message.content === prefix + "eliott"){
-            message.reply("EHHHHHHHH MERCE HEINN")}
+            console.log(randnum);
 	
 	if (message.content === "ntm"){
         message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
