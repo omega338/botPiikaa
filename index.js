@@ -128,7 +128,7 @@ bot.on('message', message => {
         var xpfinal = Object.values(xp);
         var xp_embed = new Discord.RichEmbed()
 	    .setColor('#25c059')
-            .setTitle(`${message.author.username`)
+            .setTitle(` XP de ${message.author.username`)
             .setDescription("Voici toute votre xp !")
             .addField("XP :", `${xpfinal[1]}xp`)
         message.channel.send({embed: xp_embed});
