@@ -280,6 +280,12 @@ bot.on('message', message => {
         message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
         console.log('Tu es moche !')
     }
+	
+	if (message.content === "t ki ?"){
+        message.reply("Je pense que je suis ta mère. (:")
+        console.log('Tu es moche !')
+    }
+
 
             
             
