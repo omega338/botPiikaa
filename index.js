@@ -139,30 +139,29 @@ bot.on('message', message => {
 
     }
     
-    if (command === prefix + "slap"){
-        random2();
-        var slap = args[1] 
-        if (randnum2 == 1){
-            var help_embed = new Discord.RichEmbed()
-            .setColor('#25c059')
-            .addField("**Vous avez claqué **" + slap +".", "Ouille ça fait mal !")
-            .setFooter("Merci d'utiliser le bot ! :wink:");
-            message.channel.sendEmbed(help_embed)
-            message.channel.send("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif");
-            console.log(randnum);   
-        }
-
-        if (randnum2 == 2){
-            var help_embed = new Discord.RichEmbed()
-            .setColor('#25c059')
-            .addField("**Vous avez claqué **" + slap +".", "Méchant !!!")
-            .setFooter("Merci d'utiliser le bot ! :wink:");
-            message.channel.sendEmbed(help_embed)
-            message.channel.send("https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif");
-            console.log(randnum);
-
-        }
+   if ( command === "slap" ){
+    console.log("Commande slap")
+    random2(1, 2)
+    let slap = message.mentions.members.first().user.username
+    if (randnum2 == 1){
+        var help_embed = new Discord.RichEmbed()
+        .setColor('#25c059')
+        .addField("**Vous avez claqué **" + slap +".", "Ouille ça fait mal !")
+        .setFooter("Merci d'utiliser le bot ! :wink:");
+        message.channel.send(help_embed)
+        message.channel.send("https://media.giphy.com/media/jLeyZWgtwgr2U/giphy.gif")  
     }
+
+    if (randnum2 == 2){
+        var help_embed = new Discord.RichEmbed()
+        .setColor('#25c059')
+        .addField("**Vous avez claqué **" + slap +".", "Méchant !!!")
+        .setFooter("Merci d'utiliser le bot ! :wink:")
+        message.channel.send(help_embed)
+        message.channel.send("https://media3.giphy.com/media/R7TbTsGdsfkmQ/giphy.gif")
+
+    }
+}
   
     if (message.content === prefix + "maj"){
     var help_embed = new Discord.RichEmbed()
@@ -312,7 +311,8 @@ function random(min, max) {
     max = Math.floor(7);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 }
-
-function random2(min, max) {
-    randnum2 = Math.round(Math.random() * 2 )
+function random2(min, max){
+    min2 = Math.ceil(min)
+    max2 = Math.floor(max)
+    randnum2 = Math.floor(Math.random() * (max2 - min2 +1) + min2)
 }
