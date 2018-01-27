@@ -309,7 +309,5 @@ function random(min, max) {
 }
 
 function random2(min, max) {
-    min = Math.ceil(1);
-    max = Math.floor(2);
-    randnum2 = Math.floor(Math.random() * (max - min +1) + min);
+    randnum2 = Math.round(Math.random() * 2 )
 }
