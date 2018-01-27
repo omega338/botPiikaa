@@ -19,7 +19,8 @@ bot.on('ready', () => {
 bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
-
+    const args = message.content.slice(prefix.length).trim().split(/ +/g)
+	const command = args.shift().toLowerCase()
     var msgauthor = message.author.id;
 
     if(message.author.bot)return;
@@ -40,26 +41,7 @@ bot.on('message', message => {
     if (message.content === "ping"){
         message.reply("pong");
         console.log('ping pong')
-    }
-    
-    if (!message.content.startsWith(prefix)) return;
-    var args = message.content.substring(prefix.length).split(" ");
-
-    switch (args[0].toLowerCase()){
-
-        case "newstory":
-        var value = message.content.substr(10);
-        var author = message.author;
-        var number = db.get('histoires').map('id').value();
-        console.log(value);
-        message.reply("Ajout de l'histoire à la base de données")
-
-        db.get('histores')
-            .push({ story_value: value, story_author: author}).write()
-        
-        break;
-    }
-
+    } 
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#D9F200')
