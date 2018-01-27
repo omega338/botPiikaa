@@ -301,7 +301,7 @@ bot.on('message', message => {
 
     
       
-})})
+}})
 
 
 function random(min, max) {
