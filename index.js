@@ -250,7 +250,11 @@ bot.on('message', message => {
     }
      
     if (message.content === prefix + "avatar"){
-        message.reply(message.author.avatarURL);
+        var help_embed = new Discord.RichEmbed()
+        .setColor('#25c059')
+        .addField("message.author.avatarURL")
+        .setFooter("• Avatar de {$message.author.username}");
+        message.channel.sendEmbed(help_embed);
         console.log('avatar demandé !')}
 
     if (message.content === prefix + "oxydaz"){
