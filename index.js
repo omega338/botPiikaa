@@ -253,7 +253,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "invite"){
-        message.reply("Voici le lien pour m'ajouter dans votre serveur : https://discordapp.com/oauth2/authorize?client_id=404279270995918849&permissions=8&scope=bot")   
+        message.reply("Voici le lien pour m'ajouter dans votre serveur : https://discordapp.com/api/oauth2/authorize?client_id=404279270995918849&permissions=8&scope=bot")   
          console.log('pong')
     }    
 
