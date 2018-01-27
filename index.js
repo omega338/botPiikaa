@@ -249,13 +249,10 @@ bot.on('message', message => {
         console.log('pong')
     }
      
-    if (message.content === prefix + "avatar"){
-        var help_embed = new Discord.RichEmbed()
-        .setColor('#25c059')
-        .addField(message.author.avatarURL, true)
-        .setFooter("• Voici votre Avatar ! ");
-        message.channel.sendEmbed(help_embed);
-        console.log('avatar demandé !')}
+    bot.on('message', message => {
+    if (message.content === prefix +"avatar"){
+        message.reply(message.author.avatarURL);
+	console.log('avatar demandé !')}
 
     if (message.content === prefix + "oxydaz"){
         message.reply("Ne l'appelle pas! :rage:")}
