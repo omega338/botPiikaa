@@ -265,7 +265,7 @@ bot.on('message', message => {
     if (message.content === prefix + "tavli"){
 	message.reply("Tavli c'est la plus Gro$$eBiatch")
 	    
-    if (message.content === prefix = "eliott"){
+    if (message.content === prefix + "eliott"){
 	message.reply("elio le gigolo")
 
     if (message.content === prefix + "bang"){
