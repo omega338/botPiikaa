@@ -140,7 +140,6 @@ bot.on('message', message => {
     }
     
    if ( command === "slap" ){
-    console.log("Commande slap")
     random2(1, 2)
     let slap = message.mentions.members.first().user.username
     if (randnum2 == 1){
@@ -267,21 +266,21 @@ bot.on('message', message => {
 	    
     if (message.content === prefix + "eliott"){
 	message.reply("elio le gigolo")
-
+    }
     if (message.content === prefix + "bang"){
         random();
         if (randnum == 1){
-        message.reply("https://media.giphy.com/media/cXjQ9tr9aUFm8/giphy.gif")}
+        message.reply("https://media.giphy.com/media/cXjQ9tr9aUFm8/giphy.gif")
         console.log(randnum);}
 
         if (randnum == 2){
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
-            console.log(randnum);
+            console.log(randnum);}
 	
 	if (message.content === "ntm"){
         message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
         console.log('Tu es moche !')
-    }
+    } }
 	
 	if (message.content === "t ki ?"){
         message.reply("Je suis ta mère. (:")
