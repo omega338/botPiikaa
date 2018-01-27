@@ -269,7 +269,7 @@ bot.on('message', message => {
     if (message.content === prefix + "bang"){
         random();
         if (randnum == 1){
-        message.reply("https://media.giphy.com/media/cXjQ9tr9aUFm8/giphy.gif")}
+        message.reply("https://media.giphy.com/media/cXjQ9tr9aUFm8/giphy.gif")
         console.log(randnum);}
 
         if (randnum == 2){
