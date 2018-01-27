@@ -313,3 +313,4 @@ function random(min, max) {
 function random2(min, max) {
     randnum2 = Math.round(Math.random() * 2 )
 }
+	
