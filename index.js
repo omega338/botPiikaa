@@ -139,7 +139,7 @@ bot.on('message', message => {
 
     }
     
-    if (message.content === prefix + "slap"){
+    if (command === prefix + "slap"){
         random2();
         var slap = args[1] 
         if (randnum2 == 1){
