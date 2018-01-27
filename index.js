@@ -265,7 +265,7 @@ bot.on('message', message => {
 	
     if (message.content === prefix + "tavli"){
 	message.reply("Tavli c'est la plus Gro$$eBiatch")
-
+    }
     if (message.content === prefix + "bang"){
         random();
         if (randnum == 1){
@@ -301,7 +301,7 @@ bot.on('message', message => {
 
     
       
-}}
+})})
 
 
 function random(min, max) {
