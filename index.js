@@ -273,7 +273,7 @@ bot.on('message', message => {
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
             console.log(randnum);}
     
-        if (message.content === prefix + "owbey"){
+        if (message.content === prefix + "eliott"){
             message.reply("EHHHHHHHH MERCE HEINN")}
 	
 	if (message.content === "ntm"){
