@@ -123,13 +123,12 @@ bot.on('message', message => {
 
     }
 
-    if (message.content === prefix + "xpstat"){
+   if (message.content === prefix + "xpstat"){
         var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
         var xpfinal = Object.values(xp);
         var xp_embed = new Discord.RichEmbed()
-	    .setColor('#25c059')
-            .setTitle(` XP de ${message.author.username`)
-            .setDescription("Voici toute votre xp !")
+            .setTitle(`XP de ${message.author.username}`)
+            .setDescription("Voici tout vos xp !")
             .addField("XP :", `${xpfinal[1]}xp`)
         message.channel.send({embed: xp_embed});
         console.log("Commande xpstat demandé");
