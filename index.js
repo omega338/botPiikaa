@@ -277,9 +277,8 @@ bot.on('message', message => {
             message.reply("https://media.giphy.com/media/NxZOqhqjIYwRG/giphy.gif")
             console.log(randnum);}
 	
-	if (message.content === "ntm"){
+	if (message.content === "ntr"){
         message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
-        console.log('Tu es moche !')
     } }
 	
 	if (message.content === "t ki ?"){
