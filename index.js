@@ -278,19 +278,24 @@ bot.on('message', message => {
             console.log(randnum);}
 	
 	if (message.content === "ntr"){
-        message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
+            message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
     } }
 	
 	if (message.content === "t ki ?"){
-        message.reply("Je suis ta mère. (:")
-        console.log('Tu es moche !')
+            message.reply("Je suis ta mère. (:")
+            console.log('Tu es moche !')
     }
 	
 	
 	if (message.content === "T ki ?"){
-        message.reply("Je suis ta mère. :smirk:")
-        console.log('Tu es moche!')
-	}
+            message.reply("Je suis ta mère. :smirk:")
+            console.log('Tu es moche!')
+    }
+	if (message.content === "vent"){
+            message.reply("j'aurais pas aimé :p")
+	    console.log("vent")
+	    
+	    
 }})
 
 
