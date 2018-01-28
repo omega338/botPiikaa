@@ -50,6 +50,7 @@ bot.on('message', message => {
         .addField("**__Fun !__**", " - +slap : Donner une claque à quelqu'un !\n- +hug : Permet de faire un calin aux autres ! :wink:\n- +bang : Vous pouvez tirer sur les personnes avec cette commande !\n- +avatar : Le bot envoie votre **photo de profil**")
         .addField("**__Musique !__**"," - +play : Permet d'écouter de la musique ! (PAS DISPONIBLE)") 
         .setFooter("Fait par Piikaa, AnonymoCraft et Corentin ! (v1.0)")
+	.setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
         console.log("Commande Help demandée !");
     }
@@ -127,7 +128,7 @@ bot.on('message', message => {
         var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
         var xpfinal = Object.values(xp);
         var xp_embed = new Discord.RichEmbed()
-            .setTitle(`XP de ${message.author.username} .setThumbnail(message.author.avatarURL)`)
+            .setTitle(`XP de ${message.author.username}`)
             .setDescription("Voici tout vos xp !")
             .addField("XP :", `${xpfinal[1]}xp`)
         message.channel.send({embed: xp_embed});
