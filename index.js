@@ -290,7 +290,7 @@ bot.on('message', message => {
         message.reply("Je suis ta mère. :smirk:")
         console.log('Tu es moche!')
 	}
-})
+}})
 
 
 function random(min, max) {
