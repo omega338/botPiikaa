@@ -45,7 +45,7 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#D9F200')
-        .addField("**__Commandes du bot___** !", "- +help : Affiche les commandes du bot !\n- +xpstat : Afficher votre xp !\n- +youtube : Afficher la chaîne YouTube !\n- +maj : Permet d'être au courant des nouvelles majs !\n- +paypal : Permet de faire un don aux créateurs du bot !\n- +invite : Cette commande vous permet d'avoir le lien pour ajouter le bot dans votre serveur !")
+        .addField("**__Commandes du bot___** !", "- +help : Affiche les commandes du bot !\n- +xpstat : Afficher votre xp !\n- +youtube : Afficher la chaîne YouTube !\n- +maj : Cette commande vous permet de voir les mises à jour de la semaine ! !\n- +paypal : Permet de faire un don aux créateurs du bot !\n- +invite : Cette commande vous permet d'avoir le lien pour ajouter le bot dans votre serveur !")
         .addField("**__Commandes diverses !__**", "- ping : Le bot répond pong !\n- +test : Permet de voir si tout est ok !")
         .addField("**__Fun !__**", " - +slap : Donner une claque à quelqu'un !\n- +hug : Permet de faire un calin aux autres ! :wink:\n- +bang : Vous pouvez tirer sur les personnes avec cette commande !\n- +avatar : Le bot envoie votre **photo de profil**")
         .addField("**__Musique !__**"," - +play : Permet d'écouter de la musique ! (PAS DISPONIBLE)") 
@@ -165,7 +165,7 @@ bot.on('message', message => {
     if (message.content === prefix + "maj"){
     var help_embed = new Discord.RichEmbed()
         .setColor('#25c059')
-        .addField("**__Nouveautés récentes__**","[+slap] : Permet de donner une claque aux autres ! (BETA)\n[+youtube] : Affiche la chaine Youtube de Oxydaz Youtube.\n[+hug} : Permet de faire un calin aux autres ! (BETA)\n[+ban] : Cette commande vous permetra de bannir des membres(Uniquement pour Gardien Discord et pour la créatrice).[A venir]")
+        .addField("**__Nouveautés récentes__**","[+slap] : Permet de donner une claque aux autres ! (BETA)\n[+youtube] : Affiche la chaine Youtube de Oxydaz Youtube.\n[+hug} : Permet de faire un calin aux autres ! (BETA)\n[+ban] : Cette commande vous permetra de bannir des membres(Uniquement pour Gardien Discord et pour la créatrice).[A venir]\n- +bang : Pour tirer sur quelqu'un !\n- +avatar : Affiche votre avatar !")
         message.channel.sendEmbed(help_embed);
         console.log('pingpong');
     }
