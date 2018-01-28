@@ -263,7 +263,7 @@ bot.on('message', message => {
 	message.reply("Tavli c'est la plus Gro$$eBiatch")
 	    
     if (message.content === prefix + "eliott"){
-	message.reply("elio le gigolo")
+	message.reply("EEEEEEEH MERCE")
     }
     if (message.content === prefix + "bang"){
         random();
