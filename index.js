@@ -49,7 +49,7 @@ bot.on('message', message => {
         .addField("**__Commandes diverses !__**", "- ping : Le bot répond pong !\n- +test : Permet de voir si tout est ok !")
         .addField("**__Fun !__**", " - +slap : Donner une claque à quelqu'un !\n- +hug : Permet de faire un calin aux autres ! :wink:\n- +bang : Vous pouvez tirer sur les personnes avec cette commande !\n- +avatar : Le bot envoie votre **photo de profil**")
         .addField("**__Musique !__**"," - +play : Permet d'écouter de la musique ! (PAS DISPONIBLE)") 
-        .setFooter("Fait par Piikaa, AnonymoCraft et Corentin ! (Version 1.0)")
+        .setFooter("Fait par Piikaa, AnonymoCraft et Corentin ! (v1.0)")
         message.channel.sendEmbed(help_embed);
         console.log("Commande Help demandée !");
     }
