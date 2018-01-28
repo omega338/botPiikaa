@@ -131,6 +131,7 @@ bot.on('message', message => {
             .setTitle(`XP de ${message.author.username}`)
             .setDescription("Voici tout vos xp !")
             .addField("XP :", `${xpfinal[1]}xp`)
+	    .setThumbnail(message.author.avatarURL)
         message.channel.send({embed: xp_embed});
         console.log("Commande xpstat demandé");
 
