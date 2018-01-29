@@ -296,7 +296,7 @@ bot.on('message', message => {
 	    console.log("vent")
 	    
 	    
-}})
+}) })
 
 
 function random(min, max) {
