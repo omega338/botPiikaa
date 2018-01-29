@@ -266,7 +266,7 @@ bot.on('message', message => {
        message.reply("Joyeux anniversaire !")}
 	
     if (message.content === prefix + "tavli"){
-	message.reply("Tavli c'est la plus Gro$$eBiatch")
+	message.reply("Tavli c'est la plus Gro$$eBiatch")} 
 	    
     if (message.content === prefix + "eliott"){
 	message.reply("ton père le chauve qui a le crâne aussi lisse qu'une boule de billard")
