@@ -283,7 +283,7 @@ bot.on('message', message => {
 	
 	if (message.content === "ntr"){
             message.reply(":x: Évite d'envoyer des insultes sous peine de mute ou de ban !")
-    } }
+    } 
 	
 	if (message.content === "t ki ?"){
             message.reply("Je suis ta mère. (:")
@@ -300,7 +300,7 @@ bot.on('message', message => {
 	    console.log("vent")
 	    
 	    
-})
+	} })
 
 
 function random(min, max) {
