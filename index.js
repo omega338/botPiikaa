@@ -11,6 +11,10 @@ var bot = new Discord.Client();
 var prefix = ("+");
 var randnum = 0;
 
+
+
+
+
 bot.on('ready', () => {
     bot.user.setPresence({game: { name: '[+help] - https://discord.gg/AmxnNGb', type: 0}})
     console.log("Bot Ready !");
